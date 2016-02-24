@@ -7,7 +7,7 @@ The project uses all out-of-the-box components and clientlibs without overlays. 
 ## Goals
 
 * Add enhanced validation while behaving in a completely unobtrusive manner.
-* Provide validation in the same style as out-of-the-box validation using the familiar red notification icon; no  no alerts, modals or prompts.
+* Provide validation in a consistent style as out-of-the-box validation using the familiar red notification icon; no alerts, modals or prompts.
 
 ## Added functionality
 
@@ -61,7 +61,7 @@ user the option of selecting a page within AEM or typing in an external URL.
 
 **pattern**  
 *type:* {Regex|String}  
-*Description:* A named regular expression pattern or a regular expression (e.g. "^\\d+$").  
+*Description:* A named regular expression pattern or a regular expression (e.g. `^\\d+$`).  
 *default:* Not active
 
 **Named regex patterns:**  
@@ -110,4 +110,4 @@ The main parts of the source project are:
 
 ## Using the library
 
-A package is provided in the /dist folder. Install it with Package Manager at [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp) or you can copy the /src/ui.apps/src/main/content/jcr_root/et/designs/aem-touch-ui-validation/ folder into your project.
+A package is provided in the /package folder. Install it with Package Manager at [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp) or you can copy the /aem-touch-ui-validation folder into your project.
