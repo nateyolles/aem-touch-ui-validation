@@ -4,6 +4,8 @@ This project provides enhanced validation and functionality for Adobe Experience
 
 The project uses all out-of-the-box components and clientlibs without overlays. This library is a simple clientlib that you can add or remove without affecting the rest of your project. The clientlib is in the `cq.authoring.dialog` category making it immediately available in authoring mode.
 
+![Multifield validation with min and max limits](aem_touch_ui_validation_screenshot.png)
+
 ## Goals
 
 * Add enhanced validation while behaving in a completely unobtrusive manner.
