@@ -113,3 +113,5 @@ The main parts of the source project are:
 ## Using the library
 
 A package is provided in the /package folder. Install it with Package Manager at [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp) or you can copy the /aem-touch-ui-validation folder into your project.
+
+The project is licensed under Apache License 2.0.
