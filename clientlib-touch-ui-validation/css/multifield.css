@@ -1,0 +1,7 @@
+.coral-Multifield.is-invalid {
+  border: solid 1px #e14132;
+}
+
+.coral-Multifield .marker-multifield {
+  display: none;
+}

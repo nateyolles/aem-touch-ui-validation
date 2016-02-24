@@ -1,0 +1,10 @@
+#base=js
+
+customEvents.js
+utils.js
+autocomplete.js
+colorpicker.js
+multifield.js
+pathbrowser.js
+radiogroup.js
+textfield.js
