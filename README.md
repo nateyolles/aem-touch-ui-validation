@@ -67,7 +67,7 @@ user the option of selecting a page within AEM or typing in an external URL.
 *default:* Not active
 
 **Named regex patterns:**  
-*phone*, *email*, *url*, *number*, *dateISO*, *alpha*, *alphaNumberic*, *integer*, *systemKey*
+*phone*, *email*, *url*, *number*, *dateISO*, *alpha*, *alphaNumeric*, *integer*, *systemKey*
 
 ### colorpicker
 
