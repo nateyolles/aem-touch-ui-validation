@@ -16,76 +16,76 @@ AEM validation. See the documentation at [https://docs.adobe.com/docs/en/aem/6-1
 
 ### multifield
 
-**min**
-*type:* {Long}
-*description:* The minimum number of multifield items
+**min**  
+*type:* {Long}  
+*description:* The minimum number of multifield items  
 *default:* Not active
 
-**max**
-*type:* {Long}
-*description:* Limits the maximum number of multifield items as opposed to validating.
+**max**  
+*type:* {Long}  
+*description:* Limits the maximum number of multifield items as opposed to validating.  
 *default:* Not active
 
 ### pathbrowser
 
-**required**
-*type:* {Boolean}
-*description:* Makes the field required
+**required**  
+*type:* {Boolean}  
+*description:* Makes the field required  
 *default:* false
 
-**allowNonRootPath**
-*type:* {Boolean}
-*description:* Allows a path that is not bound by the root path
+**allowNonRootPath**  
+*type:* {Boolean}  
+*description:* Allows a path that is not bound by the root path  
 *default:* false
 
-**allowNonExistingPath**
-*type:* {Boolean}
-*description:* Allows a path that is not a node in the JCR
+**allowNonExistingPath**  
+*type:* {Boolean}  
+*description:* Allows a path that is not a node in the JCR  
 *default:* false
 
-**Note:**
+**Note:**  
 Use *allowNonRootPath* in conjunction with *allowNonExistingPath* to allow the
 user the option of selecting a page within AEM or typing in an external URL.
 
 ### textfield / textarea / password
 
-**minlength**
-*type:* {Long}
-*Description:* Minimum number of characters allowed
+**minlength**  
+*type:* {Long}  
+*Description:* Minimum number of characters allowed  
 *default:* Not active
 
-**activeValidation**
-*type:* {Boolean}
-*Description:* Validation updates as the user types instead of waiting until the field loses focus.
+**activeValidation**  
+*type:* {Boolean}  
+*Description:* Validation updates as the user types instead of waiting until the field loses focus.  
 *default:* false
 
-**pattern**
-*type:* {Regex|String}
-*Description:* A named regular expression pattern or a regular expression (e.g. "^\\d+$").
+**pattern**  
+*type:* {Regex|String}  
+*Description:* A named regular expression pattern or a regular expression (e.g. "^\\d+$").  
 *default:* Not active
 
-**Named regex patterns:**
+**Named regex patterns:**  
 *phone*, *email*, *url*, *number*, *dateISO*, *alpha*, *alphaNumberic*, *integer*, *systemKey*
 
 ### colorpicker
 
-**required**
-*type:* {Boolean}
-*description:* Makes the field required
+**required**  
+*type:* {Boolean}  
+*description:* Makes the field required  
 *default:* false
 
 ### autocomplete / userpicker
 
-**required**
-*type:* {Boolean}
-*description:* Makes the field required
+**required**  
+*type:* {Boolean}  
+*description:* Makes the field required  
 *default:* false
 
 ### radiogroup
 
-**required**
-*type:* {Boolean}
-*description:* Makes the field required
+**required**  
+*type:* {Boolean}  
+*description:* Makes the field required  
 *default:* false
 
 ## Requirements
