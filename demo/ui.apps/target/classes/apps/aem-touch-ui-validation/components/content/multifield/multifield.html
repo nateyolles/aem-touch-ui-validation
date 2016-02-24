@@ -1,0 +1,25 @@
+<h3>Multifield validation sample</h3>
+
+<pre>
+    &lt;multifieldA
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/multifield"
+        fieldLabel="No validation"&gt;
+        &lt;field
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/form/textfield"
+            name="./multifieldA" /&gt;
+    &lt;/multifieldA&gt;
+    &lt;multifieldB
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/multifield"
+        fieldLabel="Min and Max limits"
+        fieldDescription="Validates less than 2 items and limits at 5."
+        min="{Long}2"
+        max="{Long}5"&gt;
+        &lt;field
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/form/textfield"
+            name="./multifieldB" /&gt;
+    &lt;/multifieldB&gt;
+</pre>

@@ -1,0 +1,3 @@
+.js-coral-Autocomplete-textfield.is-invalid ~ .coral-InputGroup-button > .coral-Button {
+  border: solid 1px #e14132;
+}

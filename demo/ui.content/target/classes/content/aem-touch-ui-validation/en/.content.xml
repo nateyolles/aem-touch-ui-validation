@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="English"
+        pageTitle="AEM Touch UI Validation Library Demo"
+        sling:resourceType="aem-touch-ui-validation/components/structure/page">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aem-touch-ui-validation/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aem-touch-ui-validation/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aem-touch-ui-validation/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <multifield
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-touch-ui-validation/components/content/multifield"/>
+            <pathbrowser
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-touch-ui-validation/components/content/pathbrowser"/>
+            <radiogroup
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-touch-ui-validation/components/content/radiogroup"/>
+            <userpicker
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-touch-ui-validation/components/content/userpicker"/>
+            <colorpicker
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-touch-ui-validation/components/content/colorpicker"/>
+            <textfield
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-touch-ui-validation/components/content/textfield"/>
+            <password
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-touch-ui-validation/components/content/password"/>
+            <textarea
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-touch-ui-validation/components/content/textarea"/>
+        </par>
+    </jcr:content>
+</jcr:root>

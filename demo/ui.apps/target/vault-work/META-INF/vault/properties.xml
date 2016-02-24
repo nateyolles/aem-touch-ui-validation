@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>aem-touch-ui-validation - UI apps</comment>
+<entry key="createdBy">yolles</entry>
+<entry key="name">aem-touch-ui-validation.ui.apps</entry>
+<entry key="created">2016-02-23T20:52:36.472-0800</entry>
+<entry key="groupId">com.nateyolles.aem</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">aem-touch-ui-validation</entry>
+<entry key="description">UI apps package for aem-touch-ui-validation</entry>
+<entry key="artifactId">aem-touch-ui-validation.ui.apps</entry>
+<entry key="path">/etc/packages/aem-touch-ui-validation/aem-touch-ui-validation.ui.apps.zip</entry>
+</properties>

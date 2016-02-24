@@ -1,0 +1,3 @@
+.js-coral-pathbrowser-input.is-invalid + .coral-InputGroup-button > .coral-Button {
+  border: solid 1px #e14132;
+}

@@ -1,0 +1,55 @@
+<h3>RadioGroup validation sample</h3>
+
+<pre>
+    &lt;radiogroupA
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+        fieldLabel="No validation"&gt;
+        &lt;items jcr:primaryType="nt:unstructured"&gt;
+            &lt;option1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/radio"
+                name="./radiogroupA"
+                text="Alpha"
+                value="alpha"/&gt;
+            &lt;option2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/radio"
+                name="./radiogroupA"
+                text="Bravo"
+                value="bravo"/&gt;
+            &lt;option3
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/radio"
+                name="./radiogroupA"
+                text="Charlie"
+                value="charlie"/&gt;
+        &lt;/items&gt;
+    &lt;/radiogroupA&gt;
+    &lt;radiogroupB
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+        fieldLabel="Required"
+        required="{Boolean}true"&gt;
+        &lt;items jcr:primaryType="nt:unstructured"&gt;
+            &lt;option1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/radio"
+                name="./radiogroupB"
+                text="Alpha"
+                value="alpha"/&gt;
+            &lt;option2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/radio"
+                name="./radiogroupB"
+                text="Bravo"
+                value="bravo"/&gt;
+            &lt;option3
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/radio"
+                name="./radiogroupB"
+                text="Charlie"
+                value="charlie"/&gt;
+        &lt;/items&gt;
+    &lt;/radiogroupB&gt;
+</pre>

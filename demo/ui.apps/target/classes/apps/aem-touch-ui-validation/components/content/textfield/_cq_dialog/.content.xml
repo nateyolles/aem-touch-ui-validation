@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="textfield validation demonstration"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <textA
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="No validation"
+                        fieldDescription="No validation"
+                        name="./textA"/>
+                    <textB
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Required, Min &amp; Max length"
+                        fieldDescription="Required, Min &amp; Max length"
+                        required="{Boolean}true"
+                        minlength="{Long}6"
+                        maxlength="{Long}10"
+                        name="./textB"/>
+                    <textC
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Email"
+                        fieldDescription="Email"
+                        required="{Boolean}true"
+                        pattern="email"
+                        name="./textC"/>
+                    <textD
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Custom Regex"
+                        fieldDescription="Custom Regex for social security number must match ^\\d{3}-\\d{2}-\\d{4}$"
+                        required="{Boolean}true"
+                        pattern="^\\d{3}-\\d{2}-\\d{4}$"
+                        name="./textD"/>
+                    <textE
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="URL with active validation"
+                        fieldDescription="Start typeing &quot;http://www.adobe.com&quot; and notice the validation happens on keypress rather than on blur."
+                        required="{Boolean}true"
+                        activeValidation="{Boolean}true"
+                        pattern="url"
+                        name="./textE"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

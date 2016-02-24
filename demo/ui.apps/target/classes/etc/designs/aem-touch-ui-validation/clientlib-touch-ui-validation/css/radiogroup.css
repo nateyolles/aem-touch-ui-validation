@@ -1,0 +1,7 @@
+.coral-RadioGroup.is-invalid {
+  border: solid 1px #e14132;
+}
+
+.coral-RadioGroup .marker {
+  display: none;
+}

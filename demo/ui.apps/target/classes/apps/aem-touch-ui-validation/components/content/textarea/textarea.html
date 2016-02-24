@@ -1,0 +1,44 @@
+<h3>Textarea validation sample</h3>
+
+<pre>
+    &lt;textareaA
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/textarea"
+        fieldLabel="No validation"
+        name="./textareaA"/&gt;
+    &lt;textareaB
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/textarea"
+        fieldLabel="Required, Min &amp; Max length"
+        fieldDescription="Required, Min &amp; Max length"
+        required="{Boolean}true"
+        minlength="{Long}4"
+        maxlength="{Long}10"
+        pattern="alpha"
+        name="./textareaB"/&gt;
+    &lt;textareaC
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/textarea"
+        fieldLabel="Required and pattern &quot;alpha&quot;"
+        fieldDescription="Required and pattern &quot;alpha&quot;"
+        required="{Boolean}true"
+        pattern="alpha"
+        name="./textareaC"/&gt;
+    &lt;textareaD
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/textarea"
+        fieldLabel="Custom Regex"
+        fieldDescription="Custom Regex for social security number must match ^\\d{3}-\\d{2}-\\d{4}$"
+        required="{Boolean}true"
+        pattern="^\\d{3}-\\d{2}-\\d{4}$"
+        name="./textareaD"/&gt;
+    &lt;textareaE
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/textarea"
+        fieldLabel="URL with active validation"
+        fieldDescription="Start typeing &quot;http://www.adobe.com&quot; and notice the validation happens on keypress rather than on blur."
+        required="{Boolean}true"
+        activeValidation="{Boolean}true"
+        pattern="url"
+        name="./textareaE"/&gt;
+</pre>

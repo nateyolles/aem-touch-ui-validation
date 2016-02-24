@@ -1,0 +1,36 @@
+<h3>PathBrowser validation sample</h3>
+
+<pre>
+    &lt;pathbrowserA
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+        fieldLabel="No validation"
+        rootPath="/content/aem-touch-ui-validation"
+        name="./pathbrowserA"/&gt;
+    &lt;pathbrowserB
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+        fieldLabel="Required"
+        rootPath="/content/aem-touch-ui-validation"
+        required="{Boolean}true"
+        name="./pathbrowserB"/&gt;
+    &lt;pathbrowserC
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+        fieldLabel="Required and allow non root path"
+        fieldDescription="Try entering a valid JCR path other than /content/aem-touch-ui-validation"
+        rootPath="/content/aem-touch-ui-validation"
+        required="{Boolean}true"
+        allowNonRootPath="{Boolean}true"
+        name="./pathbrowserC"/&gt;
+    &lt;pathbrowserD
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+        fieldLabel="Required and allow non existing path"
+        fieldDescription="Try entering an external URL"
+        rootPath="/content/aem-touch-ui-validation"
+        required="{Boolean}true"
+        allowNonRootPath="{Boolean}true"
+        allowNonExistingPath="{Boolean}true"
+        name="./pathbrowserD"/&gt;
+</pre>

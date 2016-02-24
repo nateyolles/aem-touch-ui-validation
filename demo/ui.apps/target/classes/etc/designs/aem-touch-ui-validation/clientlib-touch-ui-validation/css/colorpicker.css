@@ -1,0 +1,7 @@
+.coral-ColorPicker .marker-colorpicker {
+  display: none;
+}
+
+.coral-ColorPicker.is-invalid button {
+  border: solid 1px #e14132;
+}

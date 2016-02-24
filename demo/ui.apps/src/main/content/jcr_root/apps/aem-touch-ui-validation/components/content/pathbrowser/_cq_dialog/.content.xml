@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="PathBrowser validation demonstration"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <pathbrowserA
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="No validation"
+                        rootPath="/content/aem-touch-ui-validation"
+                        name="./pathbrowserA"/>
+                    <pathbrowserB
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="Required"
+                        rootPath="/content/aem-touch-ui-validation"
+                        required="{Boolean}true"
+                        name="./pathbrowserB"/>
+                    <pathbrowserC
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="Required and allow non root path"
+                        fieldDescription="Try entering a valid JCR path other than /content/aem-touch-ui-validation"
+                        rootPath="/content/aem-touch-ui-validation"
+                        required="{Boolean}true"
+                        allowNonRootPath="{Boolean}true"
+                        name="./pathbrowserC"/>
+                    <pathbrowserD
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="Required and allow non existing path"
+                        fieldDescription="Try entering an external URL"
+                        rootPath="/content/aem-touch-ui-validation"
+                        required="{Boolean}true"
+                        allowNonRootPath="{Boolean}true"
+                        allowNonExistingPath="{Boolean}true"
+                        name="./pathbrowserD"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
