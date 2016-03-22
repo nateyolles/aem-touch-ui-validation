@@ -8,7 +8,6 @@
     <description>aem-touch-ui-validation</description>
     
     <modules>
-        <!-- <module>core</module> -->
         <module>ui.apps</module>
         <module>ui.content</module>
     </modules>
