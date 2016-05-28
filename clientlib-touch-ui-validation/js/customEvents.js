@@ -25,7 +25,7 @@
 
   $.fn.css = function() {
     var event = new $.Event('stylechange');
-    originalCss.apply(this, arguments);
     $(this).trigger(event);
+    return originalCss.apply(this, arguments);
   }
 })();
